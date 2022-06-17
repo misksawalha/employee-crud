@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.3/sweetalert2.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  
+ 
+</head>
+<body>
+
+    
+
+    <div class="add-course">  
+        <div class="container">
+            <h1 class="text-primary">Employee CRUD system</h1>
+        <label for="">Your Name <span class="text-danger">*</span> </label>
+       
+        <input class="" type="text" placeholder="your Name"  id="yourName">
+        <div  id="t" class="">please start with capital later</div>
+
+        <label for="">your Age</label>
+        <input class="  "  type="number" placeholder="your Age"  id="yourAge">
+
+        <label for="">your Department</label>
+        <input class=""  type="text" placeholder="your Department" id="yourDepartment" >
+
+        <label for="">Your Salary</label>
+        <input class="" type="number" placeholder="Your Salary" id="yourSalary"></input>
+    
+        <div id="btns">
+            <button class="btn btn-primary" id="click" >Add Employee</button>
+        </div>
+        <input class="" type="search" placeholder="search by name..."  id="search" onkeyup="search(this.value)">
+       
+        
+    </div>
+
+<div class="container">  
+    
+    <!-- <input type="search" 
+     placeholder="search... 
+     " id="search" onkeyup="search(this.value)"> -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>name</th>
+                <th>Age</th>
+                <th>Departnent</th>
+                <th>Salary</th>
+                <th>Update</th>
+                <th>Delete</th>
+               
+            </tr>
+        </thead>
+        <button id="deleteAll" class="btn btn-danger">Delete all</button>
+        <tbody id="data">     <!--المكان يلي بدي اعدل اعليه رحت اعطيته الاي دي -->
+  
+           
+        </tbody>
+    </table>
+</div>
+   
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
